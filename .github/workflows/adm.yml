@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Tere_Ishk_Mein_%282025%29_Telugu_720p.mkv"
-          OUTPUT_FOLDER="ak"
+          INPUT_URL="https://cdn.telugudub.store/Champion_2025_Telugu_720p.mkv"
+          OUTPUT_FOLDER="ch"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add ak
+          git add ch
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
