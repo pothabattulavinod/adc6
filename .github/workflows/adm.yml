@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Dhurandhar_Telugu_720p.mkv"
-          OUTPUT_FOLDER="dh"
+          INPUT_URL="https://cdn.telugudub.store/Nari_Nari_Naduma_Murari_2026_Telugu_720p.mkv"
+          OUTPUT_FOLDER="nnnm"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add dh
+          git add nnnm
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
