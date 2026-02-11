@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Nari_Nari_Naduma_Murari_2026_Telugu_720p.mkv"
-          OUTPUT_FOLDER="nnnm"
+          INPUT_URL="https://nw32.seedr.cc/ff_get/5869408046/www.5MovieRulz.bargains%20-%20Mana%20Shankara%20Vara%20Prasad%20Garu%20(2026)%20720p%20Telugu%20HQ%20HDRip%20-%20x264%20-%20(DD_5.1%20-%20192Kbps%20_%20AAC%202.0)%20-%201.6GB%20-%20ESub.mkv?st=7koGDhCZrHg6iZ0nDQtRig&e=1770864084"
+          OUTPUT_FOLDER="msvpg"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add nnnm
+          git add msvpg
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
